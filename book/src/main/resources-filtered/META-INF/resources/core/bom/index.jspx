@@ -34,6 +34,7 @@ along with semanticcms-core-bom.  If not, see <http://www.gnu.org/licenses />.
 		shortTitle="@{documented.shortTitle}"
 		description="@{documented.description}"
 		datePublished="2019-06-11T00:31:56-0500"
+		dateModified="2019-06-11T04:23:55-0500"
 	>
 		<core:child page="changelog" />
 		<header>
@@ -63,7 +64,6 @@ along with semanticcms-core-bom.  If not, see <http://www.gnu.org/licenses />.
 				<li><core:link book="/core/breadcrumblist-json-ld" page="/" /></li>
 				<li><core:link book="/core/canonical" page="/" /></li>
 				<li><core:link book="/core/controller" page="/" /></li>
-				<li><core:link book="/core/docs" page="/" /></li>
 				<li><core:link book="/core/model" page="/" /></li>
 				<li><core:link book="/core/pages" page="/" />
 					<ul>

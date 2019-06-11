@@ -31,7 +31,6 @@ Bill of Materials (BOM) for [SemanticCMS Core](https://github.com/aoindustries/s
 * [SemanticCMS Core BreadcrumbList JSON-LD](https://github.com/aoindustries/semanticcms-core-breadcrumblist-json-ld)
 * [SemanticCMS Core Canonical](https://github.com/aoindustries/semanticcms-core-canonical)
 * [SemanticCMS Core Controller](https://github.com/aoindustries/semanticcms-core-controller)
-* [SemanticCMS Core Docs](https://github.com/aoindustries/semanticcms-core-docs)
 * [SemanticCMS Core Model](https://github.com/aoindustries/semanticcms-core-model)
 * [SemanticCMS Core Pages](https://github.com/aoindustries/semanticcms-core-pages)
     * [SemanticCMS Core Pages JSP](https://github.com/aoindustries/semanticcms-core-pages-jsp)
