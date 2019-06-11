@@ -34,8 +34,9 @@ along with semanticcms-core-bom.  If not, see <http://www.gnu.org/licenses />.
 		shortTitle="@{documented.shortTitle}"
 		description="@{documented.description}"
 		datePublished="2019-06-11T00:31:56-0500"
+		dateModified="2019-06-11T04:23:55-0500"
 	>
-		<core:child page="changelog" />
+		<core:child page="changelog.jspx" />
 		<header>
 			<ao:include
 				page="/ao-badges/badges.inc.jspx"
@@ -47,50 +48,28 @@ along with semanticcms-core-bom.  If not, see <http://www.gnu.org/licenses />.
 			/>
 		</header>
 		<p>
-			Bill of Materials (BOM) for <core:link book="/core" page="/" /> features.
+			Bill of Materials (BOM) for <core:link book="/core" page="/index.jspx" /> features.
 		</p>
 		<section:nav label="Project Links">
 			<ul>
-				<li><core:link page="/">Project Home</core:link></li>
-				<li><core:link page="changelog">Changelog</core:link></li>
+				<li><core:link page="index.jspx">Project Home</core:link></li>
+				<li><core:link page="changelog.jspx">Changelog</core:link></li>
 				<li><ao:a href="https://search.maven.org/#search%7Cgav%7C1%7Cg:%22@{documented.groupId}%22%20AND%20a:%22@{documented.artifactId}%22">Maven Central Repository</ao:a></li>
 				<li><ao:a href="@{documented.scm.url}">GitHub</ao:a></li>
 			</ul>
 		</section:nav>
 		<section:section label="Managed Dependencies">
 			<ul>
-				<li><core:link book="/core/all" page="/" /></li>
-				<li><core:link book="/core/breadcrumblist-json-ld" page="/" /></li>
-				<li><core:link book="/core/canonical" page="/" /></li>
-				<li><core:link book="/core/controller" page="/" /></li>
-				<li><core:link book="/core/docs" page="/" /></li>
-				<li><core:link book="/core/model" page="/" /></li>
-				<li><core:link book="/core/pages" page="/" />
-					<ul>
-						<li><core:link book="/core/pages/jsp" page="/" /></li>
-						<li><core:link book="/core/pages/jspx" page="/" /></li>
-						<li><core:link book="/core/pages/local" page="/" /></li>
-						<li><core:link book="/core/pages/servlet" page="/" /></li>
-						<li><core:link book="/core/pages/union" page="/" /></li>
-					</ul>
-				</li>
-				<li><core:link book="/core/renderer" page="/" />
-					<ul>
-						<li><core:link book="/core/renderer/html" page="/" /></li>
-						<li><core:link book="/core/renderer/servlet" page="/" /></li>
-					</ul>
-				</li>
-				<li><core:link book="/core/resources" page="/" />
-					<ul>
-						<li><core:link book="/core/resources/servlet" page="/" /></li>
-					</ul>
-				</li>
-				<li><core:link book="/core/servlet" page="/" /></li>
-				<li><core:link book="/core/sitemap" page="/" /></li>
-				<li><core:link book="/core/style" page="/" /></li>
-				<li><core:link book="/core/taglib" page="/" /></li>
-				<li><core:link book="/core/theme-base" page="/" /></li>
-				<li><core:link book="/core/view-content" page="/" /></li>
+				<li><core:link book="/core/all" page="/index.jspx" /></li>
+				<li><core:link book="/core/breadcrumblist-json-ld" page="/index.jspx" /></li>
+				<li><core:link book="/core/canonical" page="/index.jspx" /></li>
+				<li><core:link book="/core/model" page="/index.jspx" /></li>
+				<li><core:link book="/core/servlet" page="/index.jspx" /></li>
+				<li><core:link book="/core/sitemap" page="/index.jspx" /></li>
+				<li><core:link book="/core/style" page="/index.jspx" /></li>
+				<li><core:link book="/core/taglib" page="/index.jspx" /></li>
+				<li><core:link book="/core/theme-base" page="/index.jspx" /></li>
+				<li><core:link book="/core/view-content" page="/index.jspx" /></li>
 			</ul>
 		</section:section>
 	</core:page>
