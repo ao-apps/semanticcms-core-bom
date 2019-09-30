@@ -36,7 +36,7 @@ along with semanticcms-core-bom.  If not, see <http://www.gnu.org/licenses />.
 		shortTitle="Changelog"
 		tocLevels="1"
 		datePublished="2019-06-11T00:31:56-0500"
-		dateModified="2019-07-23T19:32:23-0500"
+		dateModified="2019-09-30T04:13:14-0500"
 	>
 		<!-- The current snapshot, unreleased version -->
 		<c:set var="version" value="@{com.semanticcms:semanticcms-core-bom:pom.version}" />
@@ -54,6 +54,11 @@ along with semanticcms-core-bom.  If not, see <http://www.gnu.org/licenses />.
 			>
 				<ul>
 					<li>Updated version of <core:link book="/core/all" page="/index.jspx" />.</li>
+					<li>Updated version of <core:link book="/core/model" page="/index.jspx" />.</li>
+					<li>Updated version of <core:link book="/core/servlet" page="/index.jspx" />.</li>
+					<li>Updated version of <core:link book="/core/sitemap" page="/index.jspx" />.</li>
+					<li>Updated version of <core:link book="/core/taglib" page="/index.jspx" />.</li>
+					<li>Updated version of <core:link book="/core/theme-base" page="/index.jspx" />.</li>
 					<li>Updated version of <core:link book="/core/view-content" page="/index.jspx" />.</li>
 				</ul>
 			</changelog:release>
