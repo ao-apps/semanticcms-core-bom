@@ -36,7 +36,7 @@ along with semanticcms-core-bom.  If not, see <http://www.gnu.org/licenses />.
 		shortTitle="Changelog"
 		tocLevels="1"
 		datePublished="2019-06-11T00:31:56-0500"
-		dateModified="2019-09-30T04:13:14-0500"
+		dateModified="2019-10-12T01:24:23-0500"
 	>
 		<!-- The current snapshot, unreleased version -->
 		<c:set var="version" value="@{com.semanticcms:semanticcms-core-bom:pom.version}" />
@@ -51,15 +51,29 @@ along with semanticcms-core-bom.  If not, see <http://www.gnu.org/licenses />.
 				groupId="@{documented.groupId}"
 				artifactId="@{documented.artifactId}"
 				scmUrl="@{documented.scm.url}"
-			>
-				<ul>
-					<li>
-						New <ao:a href="http://maven.apache.org/guides/introduction/introduction-to-dependency-mechanism.html#Importing_Dependencies">Bill of Materials (BOM)</ao:a>
-						to streamline transitive dependency management.
-					</li>
-				</ul>
-			</changelog:release>
+			/>
 		</c:if>
+
+		<changelog:release
+			projectName="@{documented.name}"
+			version="1.5.0"
+			datePublished="2019-10-12T01:24:23-0500"
+			groupId="@{documented.groupId}"
+			artifactId="@{documented.artifactId}"
+			scmUrl="@{documented.scm.url}"
+		>
+			<ul>
+				<li>Updated version of <core:link book="/core/all" page="/" />.</li>
+				<li>Updated version of <core:link book="/core/breadcrumblist-json-ld" page="/" />.</li>
+				<li>Updated version of <core:link book="/core/canonical" page="/" />.</li>
+				<li>Updated version of <core:link book="/core/model" page="/" />.</li>
+				<li>Updated version of <core:link book="/core/servlet" page="/" />.</li>
+				<li>Updated version of <core:link book="/core/sitemap" page="/" />.</li>
+				<li>Updated version of <core:link book="/core/taglib" page="/" />.</li>
+				<li>Updated version of <core:link book="/core/theme-base" page="/" />.</li>
+				<li>Updated version of <core:link book="/core/view-content" page="/" />.</li>
+			</ul>
+		</changelog:release>
 
 		<changelog:release
 			projectName="@{documented.name}"
