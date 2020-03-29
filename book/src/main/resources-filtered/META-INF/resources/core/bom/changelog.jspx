@@ -37,7 +37,7 @@ along with semanticcms-core-bom.  If not, see <http://www.gnu.org/licenses />.
 		shortTitle="Changelog"
 		tocLevels="1"
 		datePublished="2019-06-11T00:31:56-0500"
-		dateModified="2019-10-12T01:24:23-0500"
+		dateModified="2020-03-29T03:49:48-05:00"
 	>
 		<!-- The current snapshot, unreleased version -->
 		<c:set var="version" value="@{com.semanticcms:semanticcms-core-bom:pom.version}" />
@@ -54,6 +54,32 @@ along with semanticcms-core-bom.  If not, see <http://www.gnu.org/licenses />.
 				scmUrl="@{project.scm.url}"
 			/>
 		</c:if>
+
+		<changelog:release
+			projectName="@{documented.name}"
+			version="1.6.0"
+			datePublished="2020-03-29T03:49:48-05:00"
+			groupId="@{project.groupId}"
+			artifactId="@{documented.artifactId}"
+			scmUrl="@{project.scm.url}"
+		>
+			<ul>
+				<li>
+					Reduced use of property substitutions in <code>pom.xml</code>.
+					This is to help 3rd-party parsers that fail to perform full Maven-compatible substitutions.
+				</li>
+				<li>Updated version of <core:link book="/core/all" page="/" />.</li>
+				<li>Updated version of <core:link book="/core/breadcrumblist-json-ld" page="/" />.</li>
+				<li>Updated version of <core:link book="/core/canonical" page="/" />.</li>
+				<li>Updated version of <core:link book="/core/model" page="/" />.</li>
+				<li>Updated version of <core:link book="/core/servlet" page="/" />.</li>
+				<li>Updated version of <core:link book="/core/sitemap" page="/" />.</li>
+				<li>Updated version of <core:link book="/core/style" page="/" />.</li>
+				<li>Updated version of <core:link book="/core/taglib" page="/" />.</li>
+				<li>Updated version of <core:link book="/core/theme-base" page="/" />.</li>
+				<li>Updated version of <core:link book="/core/view-content" page="/" />.</li>
+			</ul>
+		</changelog:release>
 
 		<changelog:release
 			projectName="@{documented.name}"
