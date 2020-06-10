@@ -127,7 +127,7 @@ along with semanticcms-core-bom.  If not, see <http://www.gnu.org/licenses />.
 				<type>pom</type>
 				<scope>import</scope>
 			</dependency>
-			<!-- Report by versions:display-dependency-updates -->
+			<!-- Reported by versions:display-dependency-updates -->
 			<dependency>
 				<groupId>com.aoindustries</groupId><artifactId>ao-collections</artifactId><version>1.1.0${POST-SNAPSHOT}</version>
 			</dependency>
