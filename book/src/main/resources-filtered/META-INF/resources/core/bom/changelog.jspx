@@ -37,7 +37,7 @@ along with semanticcms-core-bom.  If not, see <http://www.gnu.org/licenses />.
 		shortTitle="Changelog"
 		tocLevels="1"
 		datePublished="2019-06-11T00:31:56-0500"
-		dateModified="2020-11-28T04:06:59-06:00"
+		dateModified="2020-12-01T14:59:41-06:00"
 	>
 		<!-- The current snapshot, unreleased version -->
 		<c:set var="version" value="@{com.semanticcms:semanticcms-core-bom:pom.version}" />
@@ -52,7 +52,12 @@ along with semanticcms-core-bom.  If not, see <http://www.gnu.org/licenses />.
 				groupId="@{project.groupId}"
 				artifactId="@{documented.artifactId}"
 				scmUrl="@{project.scm.url}"
-			/>
+			>
+				<ul>
+					<li>Updated version of <core:link book="/core/all" page="/" />.</li>
+					<li>Updated version of <core:link book="/core/taglib" page="/" />.</li>
+				</ul>
+			</changelog:release>
 		</c:if>
 
 		<changelog:release
