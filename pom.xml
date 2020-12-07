@@ -160,6 +160,9 @@ along with semanticcms-core-bom.  If not, see <http://www.gnu.org/licenses />.
 			<dependency>
 				<groupId>com.aoindustries</groupId><artifactId>ao-lang</artifactId><version>4.9.0${POST-SNAPSHOT}</version>
 			</dependency>
+			<dependency>
+				<groupId>com.aoindustries</groupId><artifactId>aocode-public</artifactId><version>4.4.0${POST-SNAPSHOT}</version>
+			</dependency>
 		</dependencies>
 	</dependencyManagement>
 </project>
