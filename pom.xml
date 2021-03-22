@@ -155,6 +155,9 @@ along with semanticcms-core-bom.  If not, see <http://www.gnu.org/licenses />.
 				<groupId>com.aoindustries</groupId><artifactId>ao-fluent-html</artifactId><version>0.4.0${POST-SNAPSHOT}</version>
 			</dependency>
 			<dependency>
+				<groupId>com.aoindustries</groupId><artifactId>ao-taglib</artifactId><version>6.4.1${POST-SNAPSHOT}</version>
+			</dependency>
+			<dependency>
 				<groupId>com.aoindustries</groupId><artifactId>ao-web-resources-renderer</artifactId><version>0.3.0${POST-SNAPSHOT}</version>
 			</dependency>
 			<dependency>
