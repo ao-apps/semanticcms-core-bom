@@ -164,6 +164,9 @@ along with semanticcms-core-bom.  If not, see <http://www.gnu.org/licenses />.
 				<groupId>com.aoindustries</groupId><artifactId>ao-web-resources-taglib</artifactId><version>0.3.0${POST-SNAPSHOT}</version>
 			</dependency>
 			<dependency>
+				<groupId>com.aoindustries</groupId><artifactId>aocode-public</artifactId><version>4.9.1${POST-SNAPSHOT}</version>
+			</dependency>
+			<dependency>
 				<groupId>junit</groupId><artifactId>junit</artifactId><version>4.13.2</version>
 			</dependency>
 		</dependencies>
