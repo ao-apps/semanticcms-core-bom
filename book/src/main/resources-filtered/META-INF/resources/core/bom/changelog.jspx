@@ -37,7 +37,7 @@ along with semanticcms-core-bom.  If not, see <http://www.gnu.org/licenses />.
 		shortTitle="Changelog"
 		tocLevels="1"
 		datePublished="2019-06-11T00:31:56-05:00"
-		dateModified="2021-10-19T00:01:50-05:00"
+		dateModified="2021-10-25T09:14:13-05:00"
 	>
 		<c:if test="${fn:endsWith('@{project.version}', '-SNAPSHOT') and !fn:endsWith('@{project.version}', '-POST-SNAPSHOT')}">
 			<changelog:release
@@ -47,7 +47,12 @@ along with semanticcms-core-bom.  If not, see <http://www.gnu.org/licenses />.
 				artifactId="@{documented.artifactId}"
 				repository="@{nexusUrl}content/repositories/snapshots/"
 				scmUrl="@{project.scm.url}"
-			/>
+			>
+				<ul>
+					<li>Updated version of <core:link book="/core/all" page="/" />.</li>
+					<li>Updated version of <core:link book="/core/taglib" page="/" />.</li>
+				</ul>
+			</changelog:release>
 		</c:if>
 
 		<changelog:release
