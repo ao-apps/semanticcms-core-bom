@@ -50,6 +50,8 @@ along with semanticcms-core-bom.  If not, see <http://www.gnu.org/licenses />.
 			>
 				<ul>
 					<li>Updated version of <core:link book="/core/all" page="/index.jspx" />.</li>
+					<li>Updated version of <core:link book="/core/servlet" page="/index.jspx" />.</li>
+					<li>Updated version of <core:link book="/core/sitemap" page="/index.jspx" />.</li>
 					<li>Updated version of <core:link book="/core/taglib" page="/index.jspx" />.</li>
 				</ul>
 			</changelog:release>
