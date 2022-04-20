@@ -22,215 +22,215 @@ You should have received a copy of the GNU Lesser General Public License
 along with semanticcms-core-bom.  If not, see <https://www.gnu.org/licenses/>.
 -->
 <jsp:root
-	xmlns:ao="https://oss.aoapps.com/taglib/"
-	xmlns:c="http://java.sun.com/jsp/jstl/core"
-	xmlns:changelog="https://semanticcms.com/changelog/taglib/"
-	xmlns:core="https://semanticcms.com/core/taglib/"
-	xmlns:fn="http://java.sun.com/jsp/jstl/functions"
-	xmlns:jsp="http://java.sun.com/JSP/Page"
-	version="2.1"
+  xmlns:ao="https://oss.aoapps.com/taglib/"
+  xmlns:c="http://java.sun.com/jsp/jstl/core"
+  xmlns:changelog="https://semanticcms.com/changelog/taglib/"
+  xmlns:core="https://semanticcms.com/core/taglib/"
+  xmlns:fn="http://java.sun.com/jsp/jstl/functions"
+  xmlns:jsp="http://java.sun.com/JSP/Page"
+  version="2.1"
 >
-	<jsp:directive.page language="java" pageEncoding="UTF-8" />
-	<jsp:directive.page session="false" />
-	<core:page
-		title="@{documented.name} Changelog"
-		shortTitle="Changelog"
-		tocLevels="1"
-		datePublished="2019-06-11T00:31:56-05:00"
-		dateModified="2022-03-21T05:50:15-05:00"
-	>
-		<c:if test="${fn:endsWith('@{project.version}', '-SNAPSHOT') and !fn:endsWith('@{project.version}', '-POST-SNAPSHOT')}">
-			<changelog:release
-				projectName="@{documented.name}"
-				version="@{project.version}"
-				groupId="@{project.groupId}"
-				artifactId="@{documented.artifactId}"
-				repository="@{nexusUrl}content/repositories/snapshots/"
-				scmUrl="@{project.scm.url}"
-			>
-				<ul>
-					<li>Updated dependencies.</li>
-				</ul>
-			</changelog:release>
-		</c:if>
+  <jsp:directive.page language="java" pageEncoding="UTF-8" />
+  <jsp:directive.page session="false" />
+  <core:page
+    title="@{documented.name} Changelog"
+    shortTitle="Changelog"
+    tocLevels="1"
+    datePublished="2019-06-11T00:31:56-05:00"
+    dateModified="2022-03-21T05:50:15-05:00"
+  >
+    <c:if test="${fn:endsWith('@{project.version}', '-SNAPSHOT') and !fn:endsWith('@{project.version}', '-POST-SNAPSHOT')}">
+      <changelog:release
+        projectName="@{documented.name}"
+        version="@{project.version}"
+        groupId="@{project.groupId}"
+        artifactId="@{documented.artifactId}"
+        repository="@{nexusUrl}content/repositories/snapshots/"
+        scmUrl="@{project.scm.url}"
+      >
+        <ul>
+          <li>Updated dependencies.</li>
+        </ul>
+      </changelog:release>
+    </c:if>
 
-		<changelog:release
-			projectName="@{documented.name}"
-			version="1.9.2"
-			datePublished="2022-02-16T20:14:38-06:00"
-			groupId="@{project.groupId}"
-			artifactId="@{documented.artifactId}"
-			scmUrl="@{project.scm.url}"
-		>
-			<ul>
-				<li>Updated version of <core:link book="/core/all" page="/index.jspx" />.</li>
-				<li>Updated version of <core:link book="/core/servlet" page="/index.jspx" />.</li>
-				<li>Updated version of <core:link book="/core/sitemap" page="/index.jspx" />.</li>
-				<li>Updated version of <core:link book="/core/taglib" page="/index.jspx" />.</li>
-			</ul>
-		</changelog:release>
+    <changelog:release
+      projectName="@{documented.name}"
+      version="1.9.2"
+      datePublished="2022-02-16T20:14:38-06:00"
+      groupId="@{project.groupId}"
+      artifactId="@{documented.artifactId}"
+      scmUrl="@{project.scm.url}"
+    >
+      <ul>
+        <li>Updated version of <core:link book="/core/all" page="/index.jspx" />.</li>
+        <li>Updated version of <core:link book="/core/servlet" page="/index.jspx" />.</li>
+        <li>Updated version of <core:link book="/core/sitemap" page="/index.jspx" />.</li>
+        <li>Updated version of <core:link book="/core/taglib" page="/index.jspx" />.</li>
+      </ul>
+    </changelog:release>
 
-		<changelog:release
-			projectName="@{documented.name}"
-			version="1.9.1"
-			datePublished="2021-10-19T00:01:50-05:00"
-			groupId="@{project.groupId}"
-			artifactId="@{documented.artifactId}"
-			scmUrl="@{project.scm.url}"
-		>
-			<ul>
-				<li>Updated dependencies.</li>
-			</ul>
-		</changelog:release>
+    <changelog:release
+      projectName="@{documented.name}"
+      version="1.9.1"
+      datePublished="2021-10-19T00:01:50-05:00"
+      groupId="@{project.groupId}"
+      artifactId="@{documented.artifactId}"
+      scmUrl="@{project.scm.url}"
+    >
+      <ul>
+        <li>Updated dependencies.</li>
+      </ul>
+    </changelog:release>
 
-		<changelog:release
-			projectName="@{documented.name}"
-			version="1.9.0"
-			datePublished="2021-07-19T01:54:03-05:00"
-			groupId="@{project.groupId}"
-			artifactId="@{documented.artifactId}"
-			scmUrl="@{project.scm.url}"
-		>
-			<ul>
-				<li>Updated to <ao:a rel="nofollow" href="https://www.oracle.com/java/technologies/javaee/javaeetechnologies.html#javaee7">Java™ EE 7 Web Profile</ao:a> (Servlet 3.1, JSP 2.3, EL 3.0, and JSTL 1.2).</li>
-				<li>Minimum Java version changed from 1.8 to 11.</li>
-			</ul>
-		</changelog:release>
+    <changelog:release
+      projectName="@{documented.name}"
+      version="1.9.0"
+      datePublished="2021-07-19T01:54:03-05:00"
+      groupId="@{project.groupId}"
+      artifactId="@{documented.artifactId}"
+      scmUrl="@{project.scm.url}"
+    >
+      <ul>
+        <li>Updated to <ao:a rel="nofollow" href="https://www.oracle.com/java/technologies/javaee/javaeetechnologies.html#javaee7">Java™ EE 7 Web Profile</ao:a> (Servlet 3.1, JSP 2.3, EL 3.0, and JSTL 1.2).</li>
+        <li>Minimum Java version changed from 1.8 to 11.</li>
+      </ul>
+    </changelog:release>
 
-		<changelog:release
-			projectName="@{documented.name}"
-			version="1.8.2"
-			datePublished="2021-03-19T04:33:05-05:00"
-			groupId="@{project.groupId}"
-			artifactId="@{documented.artifactId}"
-			scmUrl="@{project.scm.url}"
-		>
-			<ul>
-				<li>Updated dependencies.</li>
-			</ul>
-		</changelog:release>
+    <changelog:release
+      projectName="@{documented.name}"
+      version="1.8.2"
+      datePublished="2021-03-19T04:33:05-05:00"
+      groupId="@{project.groupId}"
+      artifactId="@{documented.artifactId}"
+      scmUrl="@{project.scm.url}"
+    >
+      <ul>
+        <li>Updated dependencies.</li>
+      </ul>
+    </changelog:release>
 
-		<changelog:release
-			projectName="@{documented.name}"
-			version="1.8.1"
-			datePublished="2020-12-14T06:47:43-06:00"
-			groupId="@{project.groupId}"
-			artifactId="@{documented.artifactId}"
-			scmUrl="@{project.scm.url}"
-		>
-			<ul>
-				<li>Updated version of <core:link book="/core/all" page="/index.jspx" />.</li>
-				<li>Updated version of <core:link book="/core/taglib" page="/index.jspx" />.</li>
-			</ul>
-		</changelog:release>
+    <changelog:release
+      projectName="@{documented.name}"
+      version="1.8.1"
+      datePublished="2020-12-14T06:47:43-06:00"
+      groupId="@{project.groupId}"
+      artifactId="@{documented.artifactId}"
+      scmUrl="@{project.scm.url}"
+    >
+      <ul>
+        <li>Updated version of <core:link book="/core/all" page="/index.jspx" />.</li>
+        <li>Updated version of <core:link book="/core/taglib" page="/index.jspx" />.</li>
+      </ul>
+    </changelog:release>
 
-		<changelog:release
-			projectName="@{documented.name}"
-			version="1.8.0"
-			datePublished="2020-12-08T07:30:44-06:00"
-			groupId="@{project.groupId}"
-			artifactId="@{documented.artifactId}"
-			scmUrl="@{project.scm.url}"
-		>
-			<ul>
-				<li>Updated version of <core:link book="/core/all" page="/index.jspx" />.</li>
-				<li>Updated version of <core:link book="/core/servlet" page="/index.jspx" />.</li>
-				<li>Updated version of <core:link book="/core/taglib" page="/index.jspx" />.</li>
-			</ul>
-		</changelog:release>
+    <changelog:release
+      projectName="@{documented.name}"
+      version="1.8.0"
+      datePublished="2020-12-08T07:30:44-06:00"
+      groupId="@{project.groupId}"
+      artifactId="@{documented.artifactId}"
+      scmUrl="@{project.scm.url}"
+    >
+      <ul>
+        <li>Updated version of <core:link book="/core/all" page="/index.jspx" />.</li>
+        <li>Updated version of <core:link book="/core/servlet" page="/index.jspx" />.</li>
+        <li>Updated version of <core:link book="/core/taglib" page="/index.jspx" />.</li>
+      </ul>
+    </changelog:release>
 
-		<changelog:release
-			projectName="@{documented.name}"
-			version="1.7.0"
-			datePublished="2020-11-28T04:06:59-06:00"
-			groupId="@{project.groupId}"
-			artifactId="@{documented.artifactId}"
-			scmUrl="@{project.scm.url}"
-		>
-			<ul>
-				<li>Updated version of <core:link book="/core/all" page="/index.jspx" />.</li>
-				<li>Updated version of <core:link book="/core/model" page="/index.jspx" />.</li>
-				<li>Updated version of <core:link book="/core/servlet" page="/index.jspx" />.</li>
-				<li>Updated version of <core:link book="/core/taglib" page="/index.jspx" />.</li>
-				<li>Updated version of <core:link book="/core/theme-base" page="/index.jspx" />.</li>
-			</ul>
-		</changelog:release>
+    <changelog:release
+      projectName="@{documented.name}"
+      version="1.7.0"
+      datePublished="2020-11-28T04:06:59-06:00"
+      groupId="@{project.groupId}"
+      artifactId="@{documented.artifactId}"
+      scmUrl="@{project.scm.url}"
+    >
+      <ul>
+        <li>Updated version of <core:link book="/core/all" page="/index.jspx" />.</li>
+        <li>Updated version of <core:link book="/core/model" page="/index.jspx" />.</li>
+        <li>Updated version of <core:link book="/core/servlet" page="/index.jspx" />.</li>
+        <li>Updated version of <core:link book="/core/taglib" page="/index.jspx" />.</li>
+        <li>Updated version of <core:link book="/core/theme-base" page="/index.jspx" />.</li>
+      </ul>
+    </changelog:release>
 
-		<changelog:release
-			projectName="@{documented.name}"
-			version="1.6.1"
-			datePublished="2020-06-30T11:53:55-05:00"
-			groupId="@{project.groupId}"
-			artifactId="@{documented.artifactId}"
-			scmUrl="@{project.scm.url}"
-		>
-			<ul>
-				<li>Updated version of <core:link book="/core/all" page="/index.jspx" />.</li>
-				<li>Updated version of <core:link book="/core/servlet" page="/index.jspx" />.</li>
-			</ul>
-		</changelog:release>
+    <changelog:release
+      projectName="@{documented.name}"
+      version="1.6.1"
+      datePublished="2020-06-30T11:53:55-05:00"
+      groupId="@{project.groupId}"
+      artifactId="@{documented.artifactId}"
+      scmUrl="@{project.scm.url}"
+    >
+      <ul>
+        <li>Updated version of <core:link book="/core/all" page="/index.jspx" />.</li>
+        <li>Updated version of <core:link book="/core/servlet" page="/index.jspx" />.</li>
+      </ul>
+    </changelog:release>
 
-		<changelog:release
-			projectName="@{documented.name}"
-			version="1.6.0"
-			datePublished="2020-03-29T03:49:48-05:00"
-			groupId="@{project.groupId}"
-			artifactId="@{documented.artifactId}"
-			scmUrl="@{project.scm.url}"
-		>
-			<ul>
-				<li>
-					Reduced use of property substitutions in <code>pom.xml</code>.
-					This is to help 3rd-party parsers that fail to perform full Maven-compatible substitutions.
-				</li>
-				<li>Updated version of <core:link book="/core/all" page="/index.jspx" />.</li>
-				<li>Updated version of <core:link book="/core/breadcrumblist-json-ld" page="/index.jspx" />.</li>
-				<li>Updated version of <core:link book="/core/canonical" page="/index.jspx" />.</li>
-				<li>Updated version of <core:link book="/core/model" page="/index.jspx" />.</li>
-				<li>Updated version of <core:link book="/core/servlet" page="/index.jspx" />.</li>
-				<li>Updated version of <core:link book="/core/sitemap" page="/index.jspx" />.</li>
-				<li>Updated version of <core:link book="/core/style" page="/index.jspx" />.</li>
-				<li>Updated version of <core:link book="/core/taglib" page="/index.jspx" />.</li>
-				<li>Updated version of <core:link book="/core/theme-base" page="/index.jspx" />.</li>
-				<li>Updated version of <core:link book="/core/view-content" page="/index.jspx" />.</li>
-			</ul>
-		</changelog:release>
+    <changelog:release
+      projectName="@{documented.name}"
+      version="1.6.0"
+      datePublished="2020-03-29T03:49:48-05:00"
+      groupId="@{project.groupId}"
+      artifactId="@{documented.artifactId}"
+      scmUrl="@{project.scm.url}"
+    >
+      <ul>
+        <li>
+          Reduced use of property substitutions in <code>pom.xml</code>.
+          This is to help 3rd-party parsers that fail to perform full Maven-compatible substitutions.
+        </li>
+        <li>Updated version of <core:link book="/core/all" page="/index.jspx" />.</li>
+        <li>Updated version of <core:link book="/core/breadcrumblist-json-ld" page="/index.jspx" />.</li>
+        <li>Updated version of <core:link book="/core/canonical" page="/index.jspx" />.</li>
+        <li>Updated version of <core:link book="/core/model" page="/index.jspx" />.</li>
+        <li>Updated version of <core:link book="/core/servlet" page="/index.jspx" />.</li>
+        <li>Updated version of <core:link book="/core/sitemap" page="/index.jspx" />.</li>
+        <li>Updated version of <core:link book="/core/style" page="/index.jspx" />.</li>
+        <li>Updated version of <core:link book="/core/taglib" page="/index.jspx" />.</li>
+        <li>Updated version of <core:link book="/core/theme-base" page="/index.jspx" />.</li>
+        <li>Updated version of <core:link book="/core/view-content" page="/index.jspx" />.</li>
+      </ul>
+    </changelog:release>
 
-		<changelog:release
-			projectName="@{documented.name}"
-			version="1.5.0"
-			datePublished="2019-10-12T01:24:23-05:00"
-			groupId="@{project.groupId}"
-			artifactId="@{documented.artifactId}"
-			scmUrl="@{project.scm.url}"
-		>
-			<ul>
-				<li>Updated version of <core:link book="/core/all" page="/index.jspx" />.</li>
-				<li>Updated version of <core:link book="/core/breadcrumblist-json-ld" page="/index.jspx" />.</li>
-				<li>Updated version of <core:link book="/core/canonical" page="/index.jspx" />.</li>
-				<li>Updated version of <core:link book="/core/model" page="/index.jspx" />.</li>
-				<li>Updated version of <core:link book="/core/servlet" page="/index.jspx" />.</li>
-				<li>Updated version of <core:link book="/core/sitemap" page="/index.jspx" />.</li>
-				<li>Updated version of <core:link book="/core/taglib" page="/index.jspx" />.</li>
-				<li>Updated version of <core:link book="/core/theme-base" page="/index.jspx" />.</li>
-				<li>Updated version of <core:link book="/core/view-content" page="/index.jspx" />.</li>
-			</ul>
-		</changelog:release>
+    <changelog:release
+      projectName="@{documented.name}"
+      version="1.5.0"
+      datePublished="2019-10-12T01:24:23-05:00"
+      groupId="@{project.groupId}"
+      artifactId="@{documented.artifactId}"
+      scmUrl="@{project.scm.url}"
+    >
+      <ul>
+        <li>Updated version of <core:link book="/core/all" page="/index.jspx" />.</li>
+        <li>Updated version of <core:link book="/core/breadcrumblist-json-ld" page="/index.jspx" />.</li>
+        <li>Updated version of <core:link book="/core/canonical" page="/index.jspx" />.</li>
+        <li>Updated version of <core:link book="/core/model" page="/index.jspx" />.</li>
+        <li>Updated version of <core:link book="/core/servlet" page="/index.jspx" />.</li>
+        <li>Updated version of <core:link book="/core/sitemap" page="/index.jspx" />.</li>
+        <li>Updated version of <core:link book="/core/taglib" page="/index.jspx" />.</li>
+        <li>Updated version of <core:link book="/core/theme-base" page="/index.jspx" />.</li>
+        <li>Updated version of <core:link book="/core/view-content" page="/index.jspx" />.</li>
+      </ul>
+    </changelog:release>
 
-		<changelog:release
-			projectName="@{documented.name}"
-			version="1.4.1"
-			datePublished="2019-06-22T02:48:31-05:00"
-			groupId="@{project.groupId}"
-			artifactId="@{documented.artifactId}"
-			scmUrl="@{project.scm.url}"
-		>
-			<ul>
-				<li>
-					New <ao:a href="https://maven.apache.org/guides/introduction/introduction-to-dependency-mechanism.html#Importing_Dependencies">Bill of Materials (BOM)</ao:a>
-					to streamline transitive dependency management.
-				</li>
-			</ul>
-		</changelog:release>
-	</core:page>
+    <changelog:release
+      projectName="@{documented.name}"
+      version="1.4.1"
+      datePublished="2019-06-22T02:48:31-05:00"
+      groupId="@{project.groupId}"
+      artifactId="@{documented.artifactId}"
+      scmUrl="@{project.scm.url}"
+    >
+      <ul>
+        <li>
+          New <ao:a href="https://maven.apache.org/guides/introduction/introduction-to-dependency-mechanism.html#Importing_Dependencies">Bill of Materials (BOM)</ao:a>
+          to streamline transitive dependency management.
+        </li>
+      </ul>
+    </changelog:release>
+  </core:page>
 </jsp:root>
