@@ -36,15 +36,15 @@ along with semanticcms-core-bom.  If not, see <https://www.gnu.org/licenses/>.
     <module.name>com.semanticcms.core.bom.book</module.name>
     <!-- These values are copied from the project being documented -->
     <documented.artifactId>semanticcms-core-bom</documented.artifactId>
-    <documented.name>SemanticCMS Core BOM²</documented.name>
+    <documented.name>SemanticCMS Core BOM</documented.name>
     <documented.description>Bill of Materials (BOM) for SemanticCMS Core features.</documented.description>
 
     <description.html><![CDATA[Documentation for <a target="${javadoc.target}" href="${project.url}">${documented.name}</a> in <a target="${javadoc.target}" href="https://semanticcms.com/">SemanticCMS</a> format.]]></description.html>
   </properties>
 
-  <name>SemanticCMS Core BOM² Book</name>
+  <name>SemanticCMS Core BOM Book</name>
   <url>https://semanticcms.com/core/bom/</url>
-  <description>Documentation for SemanticCMS Core BOM² in SemanticCMS format.</description>
+  <description>Documentation for SemanticCMS Core BOM in SemanticCMS format.</description>
   <inceptionYear>2019</inceptionYear>
 
   <licenses>
