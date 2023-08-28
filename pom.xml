@@ -32,9 +32,6 @@ along with semanticcms-core-bom.  If not, see <https://www.gnu.org/licenses/>.
   <groupId>com.semanticcms</groupId><artifactId>semanticcms-core-bom</artifactId><version>1.9.3-POST-SNAPSHOT</version>
   <packaging>pom</packaging>
 
-  <properties>
-  </properties>
-
   <name>SemanticCMS Core BOM</name>
   <url>https://semanticcms.com/core/bom/</url>
   <description>Bill of Materials (BOM) for SemanticCMS Core features.</description>
