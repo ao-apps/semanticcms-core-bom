@@ -32,6 +32,11 @@ along with semanticcms-core-bom.  If not, see <https://www.gnu.org/licenses/>.
   <groupId>com.semanticcms</groupId><artifactId>semanticcms-core-bom</artifactId><version>1.10.0-SNAPSHOT</version>
   <packaging>pom</packaging>
 
+  <properties>
+    <!-- Must be set to ${git.commit.time} for snapshots or ISO 8601 timestamp for releases. -->
+    <project.build.outputTimestamp>${git.commit.time}</project.build.outputTimestamp>
+  </properties>
+
   <name>SemanticCMS Core BOM</name>
   <url>https://semanticcms.com/core/bom/</url>
   <description>Bill of Materials (BOM) for SemanticCMS Core features.</description>
