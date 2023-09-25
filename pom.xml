@@ -106,7 +106,7 @@ along with semanticcms-core-bom.  If not, see <https://www.gnu.org/licenses/>.
   <dependencyManagement>
     <dependencies>
       <dependency>
-        <groupId>com.semanticcms</groupId><artifactId>semanticcms-core-all</artifactId><version>1.10.0-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version>
+        <groupId>com.semanticcms</groupId><artifactId>semanticcms-core-all</artifactId><version>1.10.0${POST-SNAPSHOT}</version>
       </dependency>
       <dependency>
         <groupId>com.semanticcms</groupId><artifactId>semanticcms-core-breadcrumblist-json-ld</artifactId><version>1.5.0${POST-SNAPSHOT}</version>
@@ -137,7 +137,7 @@ along with semanticcms-core-bom.  If not, see <https://www.gnu.org/licenses/>.
       </dependency>
       <!-- Imports -->
       <dependency>
-        <groupId>com.semanticcms</groupId><artifactId>semanticcms-core-all</artifactId><version>1.10.0-SNAPSHOT</version>
+        <groupId>com.semanticcms</groupId><artifactId>semanticcms-core-all</artifactId><version>1.10.0-POST-SNAPSHOT</version>
         <type>pom</type>
         <scope>import</scope>
       </dependency>
